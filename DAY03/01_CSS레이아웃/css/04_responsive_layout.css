@@ -28,7 +28,7 @@ header, nav, section, footer{
 
 /* 태블릿 모드 800px */
 
-@media screen and (max-width: 800px){
+@media screen and (min-width: 800px){
     .warapper{ max-width: 90%;}
     header, footer{width: 100%;}
     nav, section{float: left;}
