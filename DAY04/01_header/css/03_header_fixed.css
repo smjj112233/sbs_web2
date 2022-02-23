@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    /* 고정 헤더 적용하기 */
+    position: fixed;
+    top: 0px;
+    /* 고정 헤더 적용하기 */
+    width: 100%;
+    background-color: rgb(182, 222, 238);
+}
+
+header a{
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+
+header a:hover{ background-color: #ddd; color: black;}
+
+section{
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #ddd;
+    border: 3px solid aquamarine;
+}

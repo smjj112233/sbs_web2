@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-menu ul{width: 100px; height: 100px;}
+.btn-menu ul li{
+    list-style-type: none; width: 100%; height: 5px;
+    background-color: black;
+    position: absolute; left: 0; transition: all 0.5s ease-out;
+}
+.btn-menu ul li:nth-child(1){top: 0;}
+.btn-menu ul li:nth-child(2){top: 50%;}
+.btn-menu ul li:nth-child(3){bottom: 0;}
+
+/* 마우스 올렸을 때 */
+.btn-menu:hover li{transform-origin: center;} /*회전축이 중심으로됨 그렇게 차이는 없다*/
+.btn-menu:hover li:nth-child(1){
+    transform: rotate(45deg) translate(25px, 42px);
+}
+
+.btn-menu:hover li:nth-child(2){
+    opacity: 0;
+}
+
+.btn-menu:hover li:nth-child(3){
+    transform: rotate(-45deg) translate(25px, -42px);
+}
