@@ -1,0 +1,442 @@
+
+
+/* 공통 */
+.btn{
+    display: inline-block;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background-color: #06377b;
+    color: white;
+    margin: 30px auto 0;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px rgba(100, 100, 100, 0.8);
+}
+
+.section-title{
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.info{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+span{
+    color: #f44502;
+}
+
+/* 위까지 공통 */
+
+header{
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    z-index: 10;
+}
+
+header .inner{
+    width: 100%;
+    height: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+header .inner .logo-box{}
+header .inner .logo-box .logo{
+    display: block;
+    width: 158px;
+    height: 40px;
+    background: url(../img/logo.svg) 50% 50% / 158px 40px no-repeat;
+    text-indent: -999px;
+}
+
+header .inner .gnb{margin-left: 30px;}
+header .inner .gnb nav{margin-top: 5px;}
+header .inner .gnb nav ul{display: flex;}
+header .inner .gnb nav ul li {margin-right: 30px;}
+header .inner .gnb nav ul li a{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: black;
+    font-weight: 700;
+}
+
+header .inner .gnb nav ul li:hover a{color: #f44502;}
+
+
+header .inner .util{display: flex; justify-content: flex-end; margin-left: 70px;}
+header .inner .util .util-left{font-size: 15px;}
+header .inner .util .util-left ul{display: flex; align-items: center;}
+header .inner .util .util-left ul li{margin-right: 15px; line-height: 20px;}
+header .inner .util .util-left ul li a{font-weight: 600;}
+header .inner .util .util-left ul li a.point{color: #f44502;}
+
+header .inner .util .util-right{font-size: 16px; line-height: 20px; /*라인하이트 줘서 줄 맞춰짐*/}
+header .inner .util .util-right a.join{margin-right: 15px;}
+header .inner .util .util-right a.login{
+    padding: 10px 14px;
+    background-color: #f44502;
+    border-radius: 12px;
+    color: white;
+}
+
+/* 섹션: main */
+
+section.main{
+    width: 100%;
+    height: 100vh;
+    min-height: 815px;
+    max-height: 815px;
+    background: url(../img/img_mainvisual_bg.png) no-repeat center center;
+    position: relative;
+}
+
+section.main .main-title{
+    margin: 50px auto; 
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    text-align: center;
+}
+
+section.main .main-title .title{
+    font-size: 52px;
+}
+section.main .main-title .sub-title{
+    font-size: 24px;
+}
+
+section.main .main-title span{
+    color: #f44502;
+}
+
+/* 라며 슬라이드 */
+.ramen-slide{
+    position: absolute;
+    left: 50%;
+    width: 100%;
+}
+
+#ramen-slide01{
+    bottom: 30%;
+    transform: translateX(-50%);
+}
+
+#ramen-slide02{
+    bottom: 30%;
+    transform: translate(-50%, 100%);
+}
+
+.ramen-slide .slide{
+    display: flex;
+    justify-content: center;
+}
+
+.ramen-slide .slide li{
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    margin: 10px 5px;
+}
+
+.ramen-slide .slide li img{
+    width: 160px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.main .img-box{
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    width: 300px;
+    z-index: 10;
+}
+
+section.main .img-box img{
+    width: 100%;
+}
+
+/* section - intro */
+section.intro{
+    min-height: 700px;
+    background-color: #eee;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* section - recommend */
+section.recommend{
+    text-align: center;
+    padding: 120px 0;
+}
+
+section.recommend .slide-box{
+    width: 1280px;
+    margin: 100px auto;
+
+}
+
+section.recommend .slide-box ul{
+    display: flex;
+}
+
+section.recommend .slide-box ul li{
+    position: relative;
+    width: calc(100%/3);
+}
+section.recommend .slide-box ul li .label{
+    padding: 16px 28px; 
+    background-color: #06377b;
+    border-radius: 30px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 160px;
+    font-size: 20px;
+}
+
+section.recommend .slide-box ul li .content-box{
+    margin-top: 50px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+
+section.recommend .slide-box ul li .content-box p{
+    font-size: 20px;
+}
+
+/* 섹션: about */
+section.about{
+    min-height: 1900px;
+    padding: 120px 0;
+    box-sizing: border-box;
+}
+
+section.about .inner{
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+section.about .inner .about-list{
+    position: relative;   
+}
+
+section.about .inner .about-list .img-box{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+}
+
+section.about .inner .about-list .card-box{
+    width: calc(50% - 40px);
+    background: url(../img/img_about_bg01.png) bottom center no-repeat;
+    background-color: #ffeee4;
+    background-size: 100%;
+    max-width: 600px;
+    height: 600px;
+    padding: 50px 50px 0 50px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 80px;
+}
+
+section.about .inner .about-list .card-box.left{float: left;}
+section.about .inner .about-list .card-box.right{float: right; top: 120px;}
+
+section.about .inner .about-list .card-box .about-title{
+    font-size: 42px;
+    line-height: 40px;
+}
+section.about .inner .about-list .card-box .about-info{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f44502;
+}
+
+.btn-more{
+    display: block;
+    width: 38px;
+    height: 38px;
+    line-height: 25px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+
+/* 섹션 : review */
+section.review{
+    text-align: center;
+    padding: 120px 0;
+    background-color: #ffc78e;
+    box-sizing: border-box;
+    min-height: 800px;
+}
+
+section.review .card-list{
+    display: flex;
+    justify-content: center;
+}
+
+section.review .card-list ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section.review .card-list .card-box{
+    width: 310px;
+    height: 480px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+section.review .card-list .card-box .img-box{
+    width: 100%;
+    height: 240px;
+
+}
+section.review .card-list .card-box .img-box img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+section.review .card-list .card-box .content{
+    width: 100%;
+    height: 240px;
+    background-color: white;
+}
+
+section.review .card-list .card-box .content .inner{
+    padding: 20px;
+}
+
+section.review .card-list .card-box .content .inner .review-name{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+section.review .card-list .card-box .content .inner .review-content{
+    font-size: 12px;
+    text-align: left;
+    color: gray;
+}
+
+section.review .card-list .card-box .content .inner .review-content{
+    font-size: 12px;
+    text-align: left;
+    color: gray;
+}
+section.review .card-list .card-box .content .inner a{
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    color: gray;
+}
+
+section.review .card-list .card-box .content .inner .sub-title{
+    font-size: 12px;
+    text-align: left;
+    color: #f44502;
+}
+
+section.review .card-list .card-box .content .inner .sub-content{
+    font-size: 10px;
+    text-align: left;
+}
+
+section.review .card-list .card-box .content .inner .date{
+    font-size: 12px;
+    text-align: right;
+    color: gray;
+}
+
+
+
+/* 섹션: banner */
+
+section.banner{
+    min-height: 210px;
+    width: 100%;
+}
+
+section.banner .inner{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+section.banner .left-title{
+    display: flex;
+    font-display: column;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+section.banner .left-title .title{
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+section.banner .left-title .sub-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+section.banner .left-title a{
+    font-size: 16px;
+    color: white;
+}
+
+
+section.banner .right-img{
+    margin-top: -90px;
+}
+
+section.banner .right-img img{
+    width: 556px
+}
+
+section.coupon{background-color: rgba(79, 196, 126, 1);}
+
+
+
+/* 섹션: app */
+section.app{
+    min-height: 640px;
+    background-color: #f7f8fb;
+}
